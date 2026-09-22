@@ -1,0 +1,3 @@
+const links = ['About', 'Projects', 'Skills', 'Education', 'Contact']
+function Navigation({ isOpen, onMenuToggle }) { return <header className="navigation"><a className="brand" href="#home"><span className="brand__mark">◒</span>Saugat Sharma</a><button className="menu-button" type="button" aria-expanded={isOpen} aria-controls="site-navigation" onClick={onMenuToggle}>Menu</button><nav id="site-navigation" aria-label="Main navigation"><ul className={`navigation__links ${isOpen ? 'navigation__links--open' : ''}`}>{links.map((link) => <li key={link}><a href={`#${link.toLowerCase()}`}>{link}</a></li>)}</ul></nav></header> }
+export default Navigation

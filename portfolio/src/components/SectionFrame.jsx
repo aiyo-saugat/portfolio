@@ -1,0 +1,2 @@
+function SectionFrame({ id, number, title, label, variant = '' }) { return <section className={`section-frame section-frame--${variant}`} id={id} aria-labelledby={`${id}-title`}><div className="section-frame__top"><span className="section-frame__number">({number})</span><p className="section-frame__label">{label}</p></div><h2 id={`${id}-title`}>{title}</h2><div className="section-frame__placeholder"><p>Content for this area will be introduced in the next build increment.</p><span>IN PROGRESS</span></div></section> }
+export default SectionFrame
